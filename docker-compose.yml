@@ -23,4 +23,5 @@ services:
 # Useful commands afterwards for debugging
 # docker-compose up 
 # docker exec -it test-openldap_ldap_server_1 /bin/bash
-
+# Error OpenLDAP codes
+# https://www.openldap.org/doc/admin24/appendix-ldap-result-codes.html
