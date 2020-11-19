@@ -1,0 +1,397 @@
+version: 1
+
+dn: ou=marvel,dc=animation, dc=com
+ou: marvel
+objectClass: top
+objectClass: organizationalUnit
+
+dn: ou=capcom,dc=animation, dc=com
+ou: capcom
+objectClass: top
+objectClass: organizationalUnit
+
+dn: ou=warnerbros,dc=animation, dc=com
+ou: warnerbros
+objectClass: top
+objectClass: organizationalUnit
+
+dn: ou=disney,dc=animation, dc=com
+ou: disney
+objectClass: top
+objectClass: organizationalUnit
+
+dn: ou=nickelodeon,dc=animation, dc=com
+ou: nickelodeon
+objectClass: top
+objectClass: organizationalUnit
+
+dn: ou=cartoonnetwork,dc=animation, dc=com
+ou: cartoonnetwork
+objectClass: top
+objectClass: organizationalUnit
+
+dn: ou=boomerang,dc=animation, dc=com
+ou: boomerang
+objectClass: top
+objectClass: organizationalUnit
+
+dn: ou=SNK,dc=animation, dc=com
+ou: SNK
+objectClass: top
+objectClass: organizationalUnit
+
+dn: ou=nintendo,dc=animation, dc=com
+ou: nintendo
+objectClass: top
+objectClass: organizationalUnit
+
+dn: ou=funimation,dc=animation, dc=com
+ou: funimation
+objectClass: top
+objectClass: organizationalUnit
+
+dn: cn=Mega Man,ou=capcom,dc=animation, dc=com
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: inetOrgPerson
+cn: Mega Man
+sn: Man
+description: This is Mega Man's description
+facsimileTelephoneNumber: +1 510 501-5327
+l: Redmond
+ou: capcom
+postalAddress: capcom$Redmond
+telephoneNumber: +1 510 839-7609
+title: Junior capcom Stooge
+userPassword: Password1
+uid: ManM
+givenName: Mega
+mail: ManM@ns-mail2.com
+carLicense: Q6W1OI
+departmentNumber: 8014
+employeeType: Contract
+homePhone: +1 510 252-8401
+initials: J. T.
+mobile: +1 510 988-6747
+pager: +1 510 240-7888
+roomNumber: 9367
+secretary: cn=Glynda Wenyon,ou=SNK,dc=animation, dc=com 
+
+dn: cn=Mickey Mouse,ou=disney,dc=animation, dc=com
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: inetOrgPerson
+cn: Mickey Mouse
+sn: Mouse
+description: This is Mickey Mouse's description
+facsimileTelephoneNumber: +1 408 916-4902
+l: Alameda
+ou: disney
+postalAddress: disney$Alameda
+telephoneNumber: +1 408 157-7652
+title: Chief disney Fellow
+userPassword: Password1
+uid: MouseM
+givenName: Mickey
+mail: MouseM@ns-mail9.com
+carLicense: KOFH7E
+departmentNumber: 8929
+employeeType: Contract
+homePhone: +1 408 439-8736
+initials: T. G.
+mobile: +1 408 937-4833
+pager: +1 408 753-2836
+roomNumber: 9047 
+
+dn: cn=Princess Peach,ou=nintendo,dc=animation, dc=com
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: inetOrgPerson
+cn: Princess Peach
+sn: Peach
+description: This is Princess Peach's description
+facsimileTelephoneNumber: +1 213 113-7276
+l: Cupertino
+ou: nintendo
+postalAddress: nintendo$Cupertino
+telephoneNumber: +1 213 259-3025
+title: Supreme nintendo Consultant
+userPassword: Password1
+uid: Peachp
+givenName: Princess
+mail: Peachp@ns-mail6.com
+carLicense: U395MB
+departmentNumber: 1292
+employeeType: Normal
+homePhone: +1 213 491-3838
+initials: C. E.
+mobile: +1 213 701-4990
+pager: +1 213 685-1412
+roomNumber: 9996
+manager: cn=Emer Woodlief,ou=SNK,dc=animation, dc=com
+secretary: cn=Devan Danai,ou=boomerang,dc=animation, dc=com 
+
+dn: cn=Rocko Rama,ou=nickelodeon,dc=animation, dc=com
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: inetOrgPerson
+cn: Rocko Rama
+sn: Rama
+description: This is Rocko Rama's description
+facsimileTelephoneNumber: +1 804 313-1381
+l: Fremont
+ou: nickelodeon
+postalAddress: nickelodeon$Fremont
+telephoneNumber: +1 804 322-2858
+title: Master nickelodeon Developer
+userPassword: Password1
+uid: Ramar
+givenName: Rocko
+mail: Ramar@ns-mail8.com
+carLicense: H1GRP1
+departmentNumber: 5085
+employeeType: Contract
+homePhone: +1 804 230-8328
+initials: F. T.
+mobile: +1 804 205-3082
+pager: +1 804 699-7209
+roomNumber: 9094
+manager: cn=Emer Woodlief,ou=SNK,dc=animation, dc=com
+secretary: cn=Devan Danai,ou=boomerang,dc=animation, dc=com 
+
+dn: cn=Yogi Bear,ou=boomerang,dc=animation, dc=com
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: inetOrgPerson
+cn: Yogi Bear
+sn: Bear
+description: This is Yogi Bear's description
+facsimileTelephoneNumber: +1 206 139-1340
+l: Santa Clara
+ou: boomerang
+postalAddress: boomerang$Santa Clara
+telephoneNumber: +1 206 607-8279
+title: Associate boomerang Vice President
+userPassword: Password1
+uid: BearK
+givenName: Yogi
+mail: BearK@ns-mail5.com
+carLicense: YCYP1Y
+departmentNumber: 7435
+employeeType: Employee
+homePhone: +1 206 417-2958
+initials: K. N.
+mobile: +1 206 136-4126
+pager: +1 206 677-6249
+roomNumber: 8778
+manager: cn=Emer Woodlief,ou=SNK,dc=animation, dc=com
+secretary: cn=Arturo Elks,ou=nintendo,dc=animation, dc=com 
+
+dn: cn=Samurai Jack,ou=cartoonnetwork,dc=animation, dc=com
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: inetOrgPerson
+cn: Samurai Jack
+sn: Jack
+description: This is Samurai Jack's description
+facsimileTelephoneNumber: +1 206 874-7421
+l: Menlo Park
+ou: cartoonnetwork
+postalAddress: cartoonnetwork$Menlo Park
+telephoneNumber: +1 206 740-5795
+title: Master cartoonnetwork Vice President
+userPassword: Password1
+uid: JackS
+givenName: Samurai
+mail: JackS@ns-mail8.com
+carLicense: YK3N46
+departmentNumber: 2429
+employeeType: Contract
+homePhone: +1 206 164-2765
+initials: K. T.
+mobile: +1 206 626-2038
+pager: +1 206 936-3239
+roomNumber: 9200
+manager: cn=Juliet Montgomery,ou=warnerbros,dc=animation, dc=com
+secretary: cn=Jashvant Finnon,ou=cartoonnetwork,dc=animation, dc=com 
+
+dn: cn=King Koopa,ou=nintendo,dc=animation, dc=com
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: inetOrgPerson
+cn: King Koopa
+sn: Koopa
+description: This is King Koopa's description
+facsimileTelephoneNumber: +1 818 602-5858
+l: Sunnyvale
+ou: nintendo
+postalAddress: nintendo$Sunnyvale
+telephoneNumber: +1 818 757-9996
+title: Junior nintendo Fellow
+userPassword: Password1
+uid: Koopak
+givenName: King
+mail: KoopaK@ns-mail5.com
+carLicense: T4HNJC
+departmentNumber: 9246
+employeeType: Normal
+homePhone: +1 818 391-7376
+initials: H. S.
+mobile: +1 818 549-8186
+pager: +1 818 791-2359
+roomNumber: 9568
+manager: cn=Juliet Montgomery,ou=warnerbros,dc=animation, dc=com
+secretary: cn=Glynda Wenyon,ou=SNK,dc=animation, dc=com 
+
+dn: cn=Mai Shiranui,ou=SNK,dc=animation, dc=com
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: inetOrgPerson
+cn: Mai Shiranui
+sn: Shiranui
+description: This is Mai Shiranui's description
+facsimileTelephoneNumber: +1 415 467-4913
+l: Alameda
+ou: SNK
+postalAddress: SNK$Alameda
+telephoneNumber: +1 415 517-3999
+title: Chief SNK Pinhead
+userPassword: Password1
+uid: ShiranuiM
+givenName: Mai
+mail: ShiranuiM@ns-mail8.com
+carLicense: RUIFO7
+departmentNumber: 5951
+employeeType: Contract
+homePhone: +1 415 345-8589
+initials: W. K.
+mobile: +1 415 876-6463
+pager: +1 415 723-6755
+roomNumber: 9764
+manager: cn=Juliet Montgomery,ou=warnerbros,dc=animation, dc=com
+secretary: cn=Arturo Elks,ou=nintendo,dc=animation, dc=com 
+
+dn: cn=Tommy Pickles,ou=nickelodeon,dc=animation, dc=com
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: inetOrgPerson
+cn: Tommy Pickles
+sn: Pickles
+description: This is Tommy Pickles's description
+facsimileTelephoneNumber: +1 213 814-6022
+l: San Francisco
+ou: nickelodeon
+postalAddress: nickelodeon$San Francisco
+telephoneNumber: +1 213 976-8167
+title: Junior nickelodeon Visionary
+userPassword: Password1
+uid: PicklesT
+givenName: Tommy
+mail: PicklesT@ns-mail9.com
+carLicense: 3XKU1I
+departmentNumber: 8412
+employeeType: Contract
+homePhone: +1 213 221-6408
+initials: W. B.
+mobile: +1 213 963-9209
+pager: +1 213 701-4568
+roomNumber: 8560
+manager: cn=Emer Woodlief,ou=SNK,dc=animation, dc=com
+secretary: cn=Arturo Elks,ou=nintendo,dc=animation, dc=com 
+
+dn: cn=Angelica Pickles,ou=nickelodeon,dc=animation, dc=com
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: inetOrgPerson
+cn: Angelica Pickles
+sn: Pickles
+description: This is Angelica Pickles's description
+facsimileTelephoneNumber: +1 408 293-7324
+l: Orem
+ou: nickelodeon
+postalAddress: nickelodeon$Orem
+telephoneNumber: +1 408 262-7117
+title: Associate nickelodeon Assistant
+userPassword: Password1
+uid: Picklesa
+givenName: Angelica
+mail: Picklesa@ns-mail9.com
+carLicense: AOJ8U7
+departmentNumber: 9466
+employeeType: Contract
+homePhone: +1 408 959-4736
+initials: J. C.
+mobile: +1 408 900-1396
+pager: +1 408 491-4994
+roomNumber: 9519
+manager: cn=Emer Woodlief,ou=SNK,dc=animation, dc=com
+secretary: cn=Devan Danai,ou=boomerang,dc=animation, dc=com 
+
+dn: cn=Pooh Bear,ou=disney,dc=animation, dc=com
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: inetOrgPerson
+cn: Pooh Bear
+sn: Bear
+description: This is Pooh Bear's description
+facsimileTelephoneNumber: +1 415 744-7772
+l: San Jose
+ou: disney
+postalAddress: disney$San Jose
+telephoneNumber: +1 415 308-7820
+title: Junior disney Stooge
+userPassword: Password1
+uid: Bearp
+givenName: Pooh
+mail: Bearp@ns-mail3.com
+carLicense: NBNFYO
+departmentNumber: 8940
+employeeType: Employee
+homePhone: +1 415 809-1009
+initials: J. W.
+mobile: +1 415 680-2364
+pager: +1 415 738-6492
+roomNumber: 9647
+manager: cn=Juliet Montgomery,ou=warnerbros,dc=animation, dc=com
+secretary: cn=Arturo Elks,ou=nintendo,dc=animation, dc=com 
+
+dn: cn=Donald Duck,ou=disney,dc=animation, dc=com
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: inetOrgPerson
+cn: Donald Duck
+sn: Duck
+description: This is Donald Duck's description
+facsimileTelephoneNumber: +1 213 194-1339
+l: Alameda
+ou: disney
+postalAddress: disney$Alameda
+telephoneNumber: +1 213 176-9118
+title: Junior disney Mascot
+userPassword: Password1
+uid: duckd
+givenName: Donald
+mail: duckd@ns-mail2.com
+carLicense: 90454T
+departmentNumber: 2106
+employeeType: Contract
+homePhone: +1 213 291-3189
+initials: J. K.
+mobile: +1 213 887-2953
+pager: +1 213 681-3248
+roomNumber: 9515
+manager: cn=Juliet Montgomery,ou=warnerbros,dc=animation, dc=com
+secretary: cn=Jashvant Finnon,ou=cartoonnetwork,dc=animation, dc=com 
+

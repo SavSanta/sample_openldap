@@ -1,0 +1,26 @@
+version: '3.7'
+
+services:
+
+  ldap_server:
+    image: here:disney
+    environment:
+      LDAP_ADMIN_PASSWORD: test1234
+      LDAP_BASE_DN: dc=animation,dc=com
+      LDAP_LOG_LEVEL: 256
+      LDAP_DOMAIN: animation.com
+    ports:
+      - 389:389
+
+  ldap_server_admin:
+    image: osixia/phpldapadmin:0.7.2
+    ports:
+      - 8090:80
+    environment:
+      PHPLDAPADMIN_LDAP_HOSTS: ldap_server
+      PHPLDAPADMIN_HTTPS: 'false'
+
+# Useful commands afterwards for debugging
+# docker-compose up 
+# docker exec -it test-openldap_ldap_server_1 /bin/bash
+

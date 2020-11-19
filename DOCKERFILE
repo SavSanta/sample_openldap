@@ -1,0 +1,12 @@
+# Build image docker build ${PWD} -f DOCKERFILE --tag here:disney
+
+# GitRepo https://github.com/osixia/docker-openldap#known-security-issues
+FROM osixia/openldap:1.4.0
+LABEL maintainer="You"
+ENV LDAP_ORGANISATION="Animation.com Test LDAP Domain" \ 
+LDAP_LOG_LEVEL=256 \
+LDAP_ADMIN_PASSWORD="test1234" \
+LDAP_DOMAIN="animation.com"
+
+COPY bootstrap.ldif /container/service/slapd/assets/config/bootstrap/ldif/50-bootstrap.ldif
+EXPOSE 389

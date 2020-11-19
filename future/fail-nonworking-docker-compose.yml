@@ -1,0 +1,32 @@
+version: '3.7'
+
+services:
+
+  ldap_server:
+    # Can attempt to replace later with a single build and proper copy/volume mounts if future openldap supports
+    # Until then this compose should fail.
+    # Continue to use the custom image with bootstrap COPY'd in.
+    image: osixia/openldap
+    environment:
+      LDAP_ADMIN_PASSWORD: test1234
+      LDAP_BASE_DN: dc=animation,dc=com
+      LDAP_LOG_LEVEL: 256
+      LDAP_DOMAIN: animation.com
+      LDAP_REMOVE_CONFIG_AFTER_SETUP: "false"
+    ports:
+      - 389:389
+    volumes:
+      - ./bootstrap.ldif:/container/service/slapd/assets/config/bootstrap/ldif/50-bootstrap.ldif
+
+  ldap_server_admin:
+    image: osixia/phpldapadmin:0.7.2
+    ports:
+      - 8090:80
+    environment:
+      PHPLDAPADMIN_LDAP_HOSTS: ldap_server
+      PHPLDAPADMIN_HTTPS: 'false'
+
+# Useful commands afterwards for debugging
+# docker-compose up 
+# docker exec -it test-openldap_ldap_server_1 /bin/bash
+
