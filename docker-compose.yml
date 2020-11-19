@@ -25,3 +25,5 @@ services:
 # docker exec -it test-openldap_ldap_server_1 /bin/bash
 # Error OpenLDAP codes
 # https://www.openldap.org/doc/admin24/appendix-ldap-result-codes.html
+# unofficialosixia openldap configuration manual hints
+# https://hub.docker.com/r/starefossen/docker-openldap#make-your-own-openldap-image
